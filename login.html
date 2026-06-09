@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký & Đăng nhập</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <form id="login-form">
+            <h2>Đăng Nhập</h2>
+            <div class="form-group">
+                <label for="log-email">Email hoặc Tên đăng nhập:</label>
+                <input type="text" id="log-email" name="log-email" required />
+            </div>
+            <div class="form-group">
+                <label for="log-password">Mật khẩu:</label>
+                <input type="password" id="log-password" name="log-password" required />
+            </div>
+            <button type="submit" class="primary-btn">Đăng Nhập</button>
+            <p class="toggle-link">
+                Chưa có tài khoản? <a id="show-register">Đăng ký ngay</a>
+            </p>
+        </form>
+        <form id="register-form">
+            <h2>Đăng Ký Tài Khoản</h2>
+            <div class="form-group">
+                <label for="reg-username">Tên đăng nhập:</label>
+                <input type="text" id="reg-username" name="reg-username" required />
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="reg-email" required />
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Mật khẩu:</label>
+                <input type="password" id="reg-password" name="reg-password" required />
+            </div>
+            <div class="form-group">
+                <label for="reg-confirm-password">Nhập lại mật khẩu:</label>
+                <input type="password" id="reg-confirm-password" name="reg-confirm-password" required />
+            </div>
+            <button type="submit" class="primary-btn">Đăng Ký</button>
+            <p class="toggle-link">
+                Đã có tài khoản? <a id="show-login">Quay lại Đăng nhập</a>
+            </p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
